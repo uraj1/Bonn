@@ -1,0 +1,42 @@
+.contact-us {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2c3e50; /* Dark Blue */
+  }
+  
+  .team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .team-member {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member-image {
+    width: 100px; /* Set the width for the circular image */
+    height: 100px; /* Set the height for the circular image */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 10px; /* Space between the image and text */
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+  }
+  
+  .contact-details h2 {
+    color: #e74c3c; /* Deep Red */
+  }
+  

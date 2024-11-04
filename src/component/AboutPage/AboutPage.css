@@ -1,0 +1,92 @@
+/* Background */
+body {
+    background-color: #f7f7f7;
+  }
+  .main-content {
+    margin-top: 80px; /* Adjust as needed based on your navbar height */
+  }
+  .main-content {
+    margin-top: 80px;
+  }
+  
+  .about-description,
+  .section-description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .section-description {
+    margin: 10px 0 20px;
+  }
+  
+  
+  /* Navbar Links */
+  nav a {
+    color: #ffffff;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #2c3e50; /* Dark Blue */
+  }
+  
+  /* Body Text */
+  p, li, .card-text {
+    color: #4a4a4a; /* Dark Gray */
+  }
+  
+  /* Accent Color for Buttons or Links */
+  a, button {
+    color: #e74c3c; /* Deep Red */
+  }
+  
+  /* Adjust the Card to ensure content fits well */
+  .card {
+    height: 100%; /* Ensures card takes full column height */
+    display: flex;
+    flex-direction: column; /* Column layout for consistent spacing */
+    justify-content: space-between; /* Space elements for balanced look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Keeps existing shadow */
+    border-radius: 8px; /* Keeps rounded corners */
+    padding: 20px; /* Padding for consistent spacing */
+    transition: transform 0.3s ease; /* Smooth transition for card itself */
+  }
+  
+  /* Card Body adjustments for balanced content spacing */
+  .card-body {
+    flex: 1;
+    padding: 20px; /* Padding within the body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns title and text neatly */
+  }
+  .circular-image {
+    object-fit: cover;
+  }
+  
+  /* Card Image Hover Effect */
+  .card-img-top {
+    height: 180px; /* Default height */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+    width: 100%; /* Full width of the card */
+  }
+  
+  /* Image enlargement on hover */
+  .card:hover .card-img-top {
+    transform: scale(1.1); /* Enlarges the image on hover */
+    height: 250px; /* Changes height to show full image */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 150px; /* Slightly reduced height for mobile */
+    }
+    .card-body {
+      padding: 15px; /* Reduces padding for smaller screens */
+    }
+  }
+  

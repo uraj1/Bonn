@@ -1,0 +1,18 @@
+/* Carousel Image */
+.carousel-img {
+  height: 700px;
+  object-fit: cover;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Carousel Arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Change icon color to black */
+  background-image: none; /* Remove any default background */
+  font-size: 24px; /* Optional: adjust icon size */
+}
