@@ -1,0 +1,53 @@
+/* index.css */
+.steps-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #5E1F1F;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .custom-steps .ant-steps-item {
+    padding: 15px 10px;
+  }
+  .categories-title {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .custom-steps .ant-steps-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .custom-steps .ant-steps-item-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .custom-steps .ant-steps-item-tail::after {
+    background-color: #ddd;
+  }
+  
+  .finished-icon {
+    color: #52c41a;
+  }
+  
+  .progress-icon {
+    color: #1890ff;
+  }
+  
+  .waiting-icon {
+    color: #faad14;
+  }
+  
+  .custom-steps .ant-steps-item-process .ant-steps-item-icon > .ant-steps-icon,
+  .custom-steps .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon,
+  .custom-steps .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    font-size: 22px;
+  }
+  

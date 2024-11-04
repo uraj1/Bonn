@@ -3,6 +3,7 @@ import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import './HomePage.css'; 
 import Categories from '../New/bonn';
+import Stp from '../New/Steps';
 
 function HomePage() {
   return (
@@ -65,6 +66,11 @@ function HomePage() {
         <Categories/>
         </Col>
       </Row>
+      <Row>
+        <Col>
+        <Stp/>
+        </Col>
+      </Row>
       {/* Video Section */}
       <Row className="my-5 text-center">
         <Col>
@@ -79,6 +85,8 @@ function HomePage() {
         </Col>
       </Row>
     </Container>
+     
+     
 
     
 
