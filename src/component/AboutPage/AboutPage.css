@@ -1,92 +1,105 @@
 /* Background */
 body {
-    background-color: #f7f7f7;
-  }
-  .main-content {
-    margin-top: 80px; /* Adjust as needed based on your navbar height */
-  }
-  .main-content {
-    margin-top: 80px;
-  }
-  
-  .about-description,
-  .section-description {
-    font-size: 1.2rem;
-    margin: 20px 0;
-  }
-  
-  .section-description {
-    margin: 10px 0 20px;
-  }
-  
-  
-  /* Navbar Links */
-  nav a {
-    color: #ffffff;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  
-  /* Headings */
-  h1, h2, h3 {
-    color: #2c3e50; /* Dark Blue */
-  }
-  
-  /* Body Text */
-  p, li, .card-text {
-    color: #4a4a4a; /* Dark Gray */
-  }
-  
-  /* Accent Color for Buttons or Links */
-  a, button {
-    color: #e74c3c; /* Deep Red */
-  }
-  
-  /* Adjust the Card to ensure content fits well */
-  .card {
-    height: 100%; /* Ensures card takes full column height */
-    display: flex;
-    flex-direction: column; /* Column layout for consistent spacing */
-    justify-content: space-between; /* Space elements for balanced look */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Keeps existing shadow */
-    border-radius: 8px; /* Keeps rounded corners */
-    padding: 20px; /* Padding for consistent spacing */
-    transition: transform 0.3s ease; /* Smooth transition for card itself */
-  }
-  
-  /* Card Body adjustments for balanced content spacing */
-  .card-body {
-    flex: 1;
-    padding: 20px; /* Padding within the body */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Aligns title and text neatly */
-  }
-  .circular-image {
-    object-fit: cover;
-  }
-  
-  /* Card Image Hover Effect */
+  background-color: #f7f7f7;
+}
+
+.main-content {
+  margin-top: 80px; /* Adjust to match navbar height */
+  padding: 20px; /* Adds padding for main content */
+}
+
+.about-description,
+.section-description {
+  font-size: 1.2rem;
+  color: #4a4a4a; /* Consistent dark gray text */
+  margin: 20px 0;
+}
+
+/* Navbar Links */
+nav a {
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #2c3e50; /* Dark Blue */
+  margin-bottom: 15px; /* Adds spacing under headings */
+}
+
+/* Body Text */
+p, li, .card-text {
+  color: #4a4a4a; /* Dark Gray */
+  line-height: 1.6; /* Improves readability */
+}
+
+/* Accent Color for Links and Buttons */
+a, button {
+  color: #e74c3c; /* Deep Red */
+  text-decoration: none;
+}
+
+button:hover {
+  color: #c0392b; 
+}
+
+/* Card Layout and Styling */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px;
+  overflow: hidden; /* Ensures image fits within rounded corners */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth card hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Card Body for Balanced Spacing */
+.card-body {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card Image Styling */
+.card-img-top {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Image Hover Enlargement */
+.card:hover .card-img-top {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Circular Image */
+.circular-image {
+  width: 100px; /* Adjust based on container */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular shape */
+  border: 3px solid #ffffff; /* Border for better visibility */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .card-img-top {
-    height: 180px; /* Default height */
-    object-fit: cover;
-    border-radius: 8px 8px 0 0;
-    transition: transform 0.3s ease; /* Smooth transition for hover */
-    width: 100%; /* Full width of the card */
+    height: 150px; /* Smaller image height on mobile */
   }
-  
-  /* Image enlargement on hover */
-  .card:hover .card-img-top {
-    transform: scale(1.1); /* Enlarges the image on hover */
-    height: 250px; /* Changes height to show full image */
+  .card-body {
+    padding: 15px;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .card-img-top {
-      height: 150px; /* Slightly reduced height for mobile */
-    }
-    .card-body {
-      padding: 15px; /* Reduces padding for smaller screens */
-    }
-  }
-  
+}

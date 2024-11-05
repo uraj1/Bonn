@@ -10,7 +10,7 @@ const teamMembers = [
   },
   {
     name: 'Umang Raj',
-    designation: 'Lead Developer',
+    designation: 'Lead Developer-Frontend',
     email: 'umang@example.com',
     image: './images/umang.jpg',
   },

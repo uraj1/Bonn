@@ -25,7 +25,7 @@ function Categories() {
           />
           <div className="category-text">
             <h3>AMERICANA</h3>
-            <p>HAR Bite SMILE WALI</p>
+            <p>HAR BITE SMILE WALI</p>
           </div>
         </div>
         <div className="category-card">
