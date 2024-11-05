@@ -55,6 +55,7 @@ button:hover {
   overflow: hidden; /* Ensures image fits within rounded corners */
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth card hover effect */
+ 
 }
 
 .card:hover {

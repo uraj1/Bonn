@@ -1,10 +1,10 @@
 /* Navbar container */
 nav {
-  background-color: rgba(173, 171, 171, 0.581);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 30px 2px 30px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -34,7 +34,7 @@ li:last-child {
 /* Navbar links */
 a {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 15px;
@@ -44,8 +44,8 @@ a {
 
 /* Hover effects for links */
 a:hover {
-  color: #f0f0f0; /* Slightly lighter on hover */
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #696969; /* Slightly lighter on hover */
+  background-color: rgba(97, 97, 97, 0.2);
   box-shadow: 0 4px 8px rgba(17, 17, 17, 0.15); /* Adds a small shadow on hover */
   transform: scale(1.05);
 }

@@ -9,7 +9,7 @@
     font-size: 2em;
     margin-bottom: 20px;
   }
-  
+
   .categories-grid {
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
   }
   
   .category-card {
-    background-color: #5E1F1F;
+    background-color:#5E1F1F;
     width: 300px;
     padding: 10px;
     border-radius: 10px;
@@ -32,15 +32,18 @@
   
   .category-text {
     margin-top: 10px;
+    color: white;
   }
   
   .category-text h3 {
     font-size: 1.2em;
     font-weight: bold;
+    color: white;
   }
   
   .category-text p {
     font-size: 1em;
     margin-top: 5px;
+    color: white;
   }
   
