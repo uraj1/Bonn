@@ -42,11 +42,11 @@ function AboutPage() {
           }
         ].map((product, index) => (
           <Col md={4} key={index}>
-            <Card className="h-100">
+            <Card className="h-100" style={{'background-color': '#5E1f1f',"color":"white"}}>
               <Card.Img variant="top" src={product.img} alt={product.title} />
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
-                <Card.Text>{product.text}</Card.Text>
+                <Card.Text style={{"color":"white"}}>{product.text}</Card.Text>
               </Card.Body>
             </Card>
           </Col>
@@ -87,7 +87,7 @@ function AboutPage() {
           }
         ].map((solution, index) => (
           <Col md={6} key={index}>
-            <Card className="h-100">
+            <Card className="h-100" style={{'background-color': '#5E1f1f',"color":"white"}}>
               <Card.Body className="d-flex align-items-start">
                 <Image
                   src={solution.img}
@@ -100,7 +100,7 @@ function AboutPage() {
                 />
                 <div>
                   <Card.Title>{solution.title}</Card.Title>
-                  <Card.Text>{solution.text}</Card.Text>
+                  <Card.Text style={{"color":"white"}}>{solution.text}</Card.Text>
                 </div>
               </Card.Body>
             </Card>
