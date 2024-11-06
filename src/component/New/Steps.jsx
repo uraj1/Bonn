@@ -35,12 +35,12 @@ const Stp = () => (
       <Step
         title="Clustering and Facility Location"
         description={description4}
-        icon={<LoadingOutlined className="progress-icon" />}
+        icon={<CheckCircleOutlined className="finished-icon" />}
       />
       <Step
         title="Optimization Modeling"
         description={description5}
-        icon={<LoadingOutlined className="progress-icon" />}
+        icon={<CheckCircleOutlined className="finished-icon" />}
       />
       <Step
         title="Network Design and Visualization"

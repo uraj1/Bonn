@@ -6,16 +6,16 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #ffffff; /* Set text color to white */
+  color: #ffffff !important; /* Set text color to white */
 }
 
 .custom-steps .ant-steps-item {
   padding: 15px 10px;
-  color: #ffffff; /* Set text color to white */
+  color: #ffffff !important; /* Set text color to white */
 }
 
 .categories-title {
-  color: #ffffff; /* Set text color to white */
+  color: #ffffff !important; /* Set text color to white */
   font-size: 2em;
   margin-bottom: 20px;
 }
@@ -23,16 +23,17 @@
 .custom-steps .ant-steps-item-title {
   font-size: 18px;
   font-weight: bold;
-  color: #ffffff; /* Set text color to white */
+  color: #ffffff !important; /* Set text color to white */
 }
 
 .custom-steps .ant-steps-item-description {
   font-size: 14px;
-  color: #ffffff; /* Set text color to white */
+  color: #ffffff !important; /* Set text color to white */
 }
 
 .custom-steps .ant-steps-item-tail::after {
-  background-color: #ddd;
+  background-color: #ddd !important;
+  margin-top: 15px;
 }
 
 .finished-icon {
@@ -51,5 +52,5 @@
 .custom-steps .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon,
 .custom-steps .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
   font-size: 22px;
-  color: #ffffff !important; 
+  color: #ffffff !important; /* Set icon color to white */
 }
