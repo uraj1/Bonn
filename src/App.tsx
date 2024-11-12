@@ -6,6 +6,7 @@ import AboutPage from './pages/About';
 import ContactPage from './pages/Contact';
 import NotFoundPage from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
+import Team from './pages/Team';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/team" element={<Team/>} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </AnimatePresence>

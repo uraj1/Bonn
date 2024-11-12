@@ -22,57 +22,33 @@ const About = () => {
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.h1
-              className="text-4xl md:text-5xl font-bold mb-6"
-              initial={{ opacity: 0, y: -50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2 }}
-            >
-              About Bonn
-            </motion.h1>
-            <motion.p
-              className="text-xl text-blue-100 max-w-2xl"
-              initial={{ opacity: 0, y: -50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3 }}
-            >
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Bonn</h1>
+            <p className="text-xl text-blue-100 max-w-2xl">
               Established with a passion for quality and innovation, Bonn is a leading name in the bakery and confectionery industry, dedicated to crafting delicious, nutritious, and delightful products worldwide.
-            </motion.p>
+            </p>
           </div>
         </div>
 
         {/* Stats Section */}
         <div className="py-16 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div
-              ref={ref}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.4 }}
-            >
+            <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ delay: index * 0.1 }}
-                    className="text-center"
-                  >
+                  <div key={index} className="text-center">
                     <Icon className="w-8 h-8 mx-auto text-blue-600 dark:text-blue-400 mb-4" />
                     <div className="text-3xl font-bold mb-2">{stat.value}</div>
                     <div className="text-gray-600 dark:text-gray-400">{stat.label}</div>
-                  </motion.div>
+                  </div>
                 );
               })}
-            </motion.div>
+            </div>
           </div>
         </div>
 
-      {/* Product Range Section */}
-      <div className="py-16 bg-gray-50 dark:bg-gray-800">
+        {/* Product Range Section */}
+        <div className="py-16 bg-gray-50 dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.h2
               className="text-3xl font-bold mb-6 text-center"
@@ -91,10 +67,7 @@ const About = () => {
               We offer a variety of products crafted with premium ingredients to ensure the best taste and quality. From delicious breads and buns to healthy cookies and indulgent cakes, we have something for everyone.
             </motion.p>
 
-            <div
-              ref={ref}
-              className="grid md:grid-cols-3 gap-12"
-            >
+            <div ref={ref} className="grid md:grid-cols-3 gap-12">
               {[
                 {
                   title: 'Bread & Buns',
@@ -150,7 +123,6 @@ const About = () => {
           </div>
         </div>
 
-
         {/* Innovative Supply Chain Solutions Section */}
         <div className="py-16 bg-gray-50 dark:bg-gray-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -200,16 +172,30 @@ const About = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.5 }}
                 >
-                  <div className="flex items-center p-6">
+                  <div className="aspect-w-16 aspect-h-9">
                     <img
                       src={solution.img}
                       alt={solution.title}
-                      className="w-16 h-16 object-cover rounded-full mr-6"
+                      className="w-full h-full object-cover"
                     />
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-400">{solution.text}</p>
-                    </div>
+                  </div>
+                  <div className="p-6">
+                    <motion.h3
+                      className="text-xl font-semibold mb-4"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={inView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ delay: 0.6 }}
+                    >
+                      {solution.title}
+                    </motion.h3>
+                    <motion.p
+                      className="text-gray-600 dark:text-gray-400"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={inView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ delay: 0.7 }}
+                    >
+                      {solution.text}
+                    </motion.p>
                   </div>
                 </motion.div>
               ))}

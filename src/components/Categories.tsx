@@ -22,17 +22,17 @@ function Categories() {
           {[
             {
               image: 'https://bonn.in/new-images/blog/b3.jpg',
-              title: 'AMERICANA',
+              title: 'BREADS',
               description: 'UNWRAP THE TASTE OF REAL CHOCOLATE',
             },
             {
               image: 'https://bonn.in/new-images/blog/coconut%20blog%20image.jpg',
-              title: 'AMERICANA',
+              title: 'COOKIES',
               description: 'HAR BITE SMILE WALI',
             },
             {
               image: 'https://bonn.in/new-images/blog/front-view-black-bread.jpg',
-              title: 'AMERICANA',
+              title: 'CAKES AND PASTRIES',
               description: 'INDIA KA CRUNCHY COCONUT',
             },
           ].map((category, index) => (

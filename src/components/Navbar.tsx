@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Info, Phone, Sun, Moon } from 'lucide-react';
+import { Menu, X, Home, Info, Phone, Sun, Moon, Users } from 'lucide-react'; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +23,7 @@ const Navbar = () => {
     { path: '/', label: 'Home', icon: Home },
     { path: '/about', label: 'About', icon: Info },
     { path: '/contact', label: 'Contact', icon: Phone },
+    { path: '/team', label: 'Team', icon: Users }, // Added Team page link
   ];
 
   return (
