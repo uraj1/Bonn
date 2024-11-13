@@ -4,55 +4,59 @@ import { Mail, Phone } from 'lucide-react';
 
 const teamMembers = [
   {
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    designation: 'Software Engineer',
-    phone: '+91 7000000001',
-    photo: 'path/to/photo1.jpg',
+    name: ' Suyash Ranjan',
+    email: '12117047@nitkkr.ac.in',
+    designation: 'Product Developer',
+    phone: '+91 8825211798',
+    photo: 'https://drive.google.com/thumbnail?id=1ldrPgUpdern5RIFavImklQjtg5jgh-Vn'
+
   },
   {
-    name: 'Jane Smith',
-    email: 'jane.smith@example.com',
+    name: 'Umang Raj Verma',
+    email: '12117043@nitkkr.ac.in',
     designation: 'Frontend Developer',
-    phone: '+91 7000000002',
-    photo: 'path/to/photo2.jpg',
+    phone: '+91 7766014193',
+    photo: 'https://drive.google.com/thumbnail?id=1bgY2N6LAr3oUastIwJRumRs8O8dLmeod'
   },
   {
-    name: 'Alex Johnson',
-    email: 'alex.johnson@example.com',
+    name: 'Mohit Gupta',
+    email: '12117051@nitkkr.ac.in',
+    designation: 'Frontend Developer',
+    phone: '+91 7877676528',
+    photo: 'https://drive.google.com/thumbnail?id=1ohRXdnMcQ7FRBq7adT00XDe0do2689E4',
+  },
+  
+ 
+  {
+    name: 'Aakash Khanna',
+    email: '12117038@nitkkr.ac.in',
     designation: 'Backend Developer',
-    phone: '+91 7000000003',
-    photo: 'path/to/photo3.jpg',
+    phone: '+91 8445682090',
+    photo: 'https://drive.google.com/thumbnail?id=1U3Fe3nH9wp4e5TMksB6n1oQ2kJoo0KBA',
+
   },
   {
-    name: 'Chris Lee',
-    email: 'chris.lee@example.com',
-    designation: 'UI/UX Designer',
-    phone: '+91 7000000004',
-    photo: 'path/to/photo4.jpg',
+    name: 'Rahul Rao',
+    email: '12117037@nitkkr.ac.in',
+    designation: 'Frontend Developer',
+    phone: '+91 8295970236',
+    photo: 'https://drive.google.com/thumbnail?id=1iRUrdbNBF3kN_UUtUGSquE9kO7USp1wV',
   },
   {
-    name: 'Pat Taylor',
-    email: 'pat.taylor@example.com',
-    designation: 'QA Tester',
-    phone: '+91 7000000005',
-    photo: 'path/to/photo5.jpg',
-  },
-  {
-    name: 'Sam Brown',
-    email: 'sam.brown@example.com',
-    designation: 'DevOps Engineer',
-    phone: '+91 7000000006',
-    photo: 'path/to/photo6.jpg',
+    name: 'Raj Gupta',
+    email: '12117018@nitkkr.ac.in',
+    designation: 'Data Analyst',
+    phone: '+91 8104463771',
+    photo: 'https://drive.google.com/thumbnail?id=1E6eA3JGfREgxZC-Iq8mZ1okvJLPqtvBn',
   },
 ];
 
 const mentor = {
-  name: 'Dr. Emily Clark',
-  email: 'emily.clark@example.com',
+  name: 'Dr. Rajeev Verma',
+  email: 'rajeevkkr@nitkkr.ac.in',
   designation: 'Project Mentor',
-  phone: '+91 7000000007',
-  photo: 'path/to/mentor-photo.jpg',
+  phone: '+91 8295868855',
+  photo: 'https://drive.google.com/thumbnail?id=1qAFSiSoecmxrKsQ9fXcKnsVrPmPAWKoW',
 };
 
 const Team = () => {
