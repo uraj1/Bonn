@@ -1,7 +1,7 @@
-import PageTransition from '../components/PageTransition';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Award, Users, Target, Truck } from 'lucide-react';
+import PageTransition from "../components/PageTransition";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Award, Users, Target, Truck } from "lucide-react";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -10,10 +10,10 @@ const About = () => {
   });
 
   const stats = [
-    { icon: Users, value: '10+', label: 'Employees' },
-    { icon: Truck, value: '500+', label: 'Delivery Vehicles' },
-    { icon: Target, value: '800+', label: 'Cities Covered' },
-    { icon: Award, value: '25+', label: 'Years Experience' },
+    { icon: Users, value: "10+", label: "Employees" },
+    { icon: Truck, value: "500+", label: "Delivery Vehicles" },
+    { icon: Target, value: "800+", label: "Cities Covered" },
+    { icon: Award, value: "25+", label: "Years Experience" },
   ];
 
   return (
@@ -24,7 +24,10 @@ const About = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Bonn</h1>
             <p className="text-xl text-blue-100 max-w-2xl">
-              Established with a passion for quality and innovation, Bonn is a leading name in the bakery and confectionery industry, dedicated to crafting delicious, nutritious, and delightful products worldwide.
+              Established with a passion for quality and innovation, Bonn is a
+              leading name in the bakery and confectionery industry, dedicated
+              to crafting delicious, nutritious, and delightful products
+              worldwide.
             </p>
           </div>
         </div>
@@ -39,7 +42,9 @@ const About = () => {
                   <div key={index} className="text-center">
                     <Icon className="w-8 h-8 mx-auto text-blue-600 dark:text-blue-400 mb-4" />
                     <div className="text-3xl font-bold mb-2">{stat.value}</div>
-                    <div className="text-gray-600 dark:text-gray-400">{stat.label}</div>
+                    <div className="text-gray-600 dark:text-gray-400">
+                      {stat.label}
+                    </div>
                   </div>
                 );
               })}
@@ -64,25 +69,28 @@ const About = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.6 }}
             >
-              We offer a variety of products crafted with premium ingredients to ensure the best taste and quality. From delicious breads and buns to healthy cookies and indulgent cakes, we have something for everyone.
+              We offer a variety of products crafted with premium ingredients to
+              ensure the best taste and quality. From delicious breads and buns
+              to healthy cookies and indulgent cakes, we have something for
+              everyone.
             </motion.p>
 
             <div ref={ref} className="grid md:grid-cols-3 gap-12">
               {[
                 {
-                  title: 'Bread & Buns',
-                  text: 'From classic white and whole grain to specialty buns, Bonn’s breads are crafted to perfection for every meal and occasion.',
-                  img: 'https://www.jiomart.com/images/product/original/490006437/bonn-brown-bread-400g-product-images-o490006437-p490006437-0-202407171835.jpg?im=Resize=(420,420)',
+                  title: "Bread & Buns",
+                  text: "From classic white and whole grain to specialty buns, Bonn’s breads are crafted to perfection for every meal and occasion.",
+                  img: "https://www.jiomart.com/images/product/original/490006437/bonn-brown-bread-400g-product-images-o490006437-p490006437-0-202407171835.jpg?im=Resize=(420,420)",
                 },
                 {
-                  title: 'Cookies & Biscuits',
-                  text: 'Enjoy a delicious variety of cookies and biscuits in flavors like chocolate, butter, and millet—a tasty yet healthy snack choice.',
-                  img: 'https://3.imimg.com/data3/MR/SI/MY-139721/butter-bonn-500x500.jpg',
+                  title: "Cookies & Biscuits",
+                  text: "Enjoy a delicious variety of cookies and biscuits in flavors like chocolate, butter, and millet—a tasty yet healthy snack choice.",
+                  img: "https://3.imimg.com/data3/MR/SI/MY-139721/butter-bonn-500x500.jpg",
                 },
                 {
-                  title: 'Cakes & Pastries',
-                  text: 'Indulge in our selection of cakes and pastries, crafted with premium ingredients, perfect for celebrating special moments.',
-                  img: 'https://m.media-amazon.com/images/I/71T-mMZBU8L.jpg',
+                  title: "Cakes & Pastries",
+                  text: "Indulge in our selection of cakes and pastries, crafted with premium ingredients, perfect for celebrating special moments.",
+                  img: "https://m.media-amazon.com/images/I/71T-mMZBU8L.jpg",
                 },
               ].map((product, index) => (
                 <motion.div
@@ -140,48 +148,50 @@ const About = () => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.8 }}
             >
-              As a forward-thinking company, Bonn leverages Artificial Intelligence (AI) to enhance our supply chain operations, ensuring efficient product delivery and reduced environmental impact.
+              As a forward-thinking company, Bonn leverages Artificial
+              Intelligence (AI) to enhance our supply chain operations, ensuring
+              efficient product delivery and reduced environmental impact.
             </motion.p>
             <div className="grid md:grid-cols-2 gap-12">
               {[
                 {
-                  title: 'Demand Forecasting with AI',
-                  text: 'Using AI-powered demand forecasting, we predict product demand accurately, minimizing wastage and ensuring availability. This predictive approach maintains optimal stock levels and reduces overproduction.',
-                  img: 'https://www.zionex.com/wp-content/uploads/2023/01/deeplearning-scaled.jpg',
+                  title: "Demand Forecasting with AI",
+                  text: "Using AI-powered demand forecasting, we predict product demand accurately, minimizing wastage and ensuring availability. This predictive approach maintains optimal stock levels and reduces overproduction.",
+                  img: "https://www.zionex.com/wp-content/uploads/2023/01/deeplearning-scaled.jpg",
                 },
                 {
-                  title: 'Real-Time Inventory Tracking',
-                  text: 'AI in real-time inventory tracking improves visibility into stock levels, enabling timely restocking and efficient logistics. This predictive capability helps businesses minimize stockouts and overstock, resulting in cost savings and enhanced customer satisfaction.',
-                  img: 'https://www.clipartmax.com/png/middle/69-697978_inventory-management-retail-inventory-management-system.png',
+                  title: "Real-Time Inventory Tracking",
+                  text: "AI in real-time inventory tracking improves visibility into stock levels, enabling timely restocking and efficient logistics. This predictive capability helps businesses minimize stockouts and overstock, resulting in cost savings and enhanced customer satisfaction.",
+                  img: "https://www.clipartmax.com/png/middle/69-697978_inventory-management-retail-inventory-management-system.png",
                 },
                 {
-                  title: 'Route Optimization',
-                  text: 'With AI-driven route optimization, we minimize transportation costs and carbon emissions, calculating efficient routes for cost-effective distribution with a reduced environmental footprint.',
-                  img: 'https://nuvizz.com/wp-content/uploads/2023/05/best-route.jpg',
+                  title: "Route Optimization",
+                  text: "With AI-driven route optimization, we minimize transportation costs and carbon emissions, calculating efficient routes for cost-effective distribution with a reduced environmental footprint.",
+                  img: "https://nuvizz.com/wp-content/uploads/2023/05/best-route.jpg",
                 },
                 {
-                  title: 'Quality Control with Machine Learning',
-                  text: 'Machine learning models in our production line monitor quality in real-time, ensuring each product meets Bonn’s high standards and addressing quality issues proactively.',
-                  img: 'https://www.gmp-compliance.org/files/eca/userImages/header.img/ECA-AI-GxP-IT-Basics.jpg',
+                  title: "Quality Control with Machine Learning",
+                  text: "Machine learning models in our production line monitor quality in real-time, ensuring each product meets Bonn’s high standards and addressing quality issues proactively.",
+                  img: "https://www.gmp-compliance.org/files/eca/userImages/header.img/ECA-AI-GxP-IT-Basics.jpg",
                 },
               ].map((solution, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white shadow-lg rounded-lg overflow-hidden"
+                  className="bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-200 flex items-center p-6"
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.5 }}
                 >
-                  <div className="aspect-w-16 aspect-h-9">
+                  <div className="w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                     <img
                       src={solution.img}
                       alt={solution.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="p-6">
+                  <div className="ml-6">
                     <motion.h3
-                      className="text-xl font-semibold mb-4"
+                      className="text-xl font-semibold mb-2 dark:text-gray-900"
                       initial={{ opacity: 0, y: 20 }}
                       animate={inView ? { opacity: 1, y: 0 } : {}}
                       transition={{ delay: 0.6 }}
@@ -189,7 +199,7 @@ const About = () => {
                       {solution.title}
                     </motion.h3>
                     <motion.p
-                      className="text-gray-600 dark:text-gray-400"
+                      className="text-gray-600 dark:text-gray-700"
                       initial={{ opacity: 0, y: 20 }}
                       animate={inView ? { opacity: 1, y: 0 } : {}}
                       transition={{ delay: 0.7 }}
