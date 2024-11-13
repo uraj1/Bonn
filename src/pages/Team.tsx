@@ -52,8 +52,8 @@ const teamMembers = [
 ];
 
 const mentor = {
-  name: 'Dr. Rajeev Verma',
-  email: 'rajeevkkr@nitkkr.ac.in',
+  name: 'Dr. Rajiv Verma',
+  email: ' rajivkkr@yahoo.com',
   designation: 'Project Mentor',
   phone: '+91 8295868855',
   photo: 'https://drive.google.com/thumbnail?id=1qAFSiSoecmxrKsQ9fXcKnsVrPmPAWKoW',
