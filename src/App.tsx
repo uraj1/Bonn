@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
 import Team from './pages/Team';
 import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </AnimatePresence>
+        <ScrollToTopButton/>
         <Footer/>
       </div>
     </Router>
