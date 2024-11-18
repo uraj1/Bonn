@@ -57,7 +57,7 @@ const Home = () => {
                 Bonn Group: Revolutionizing Supply Chain Operations
               </p>
               <button className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
-                Learn More <ArrowRight className="ml-2" size={20} />
+                Solutions <ArrowRight className="ml-2" size={20} />
               </button>
             </div>
           </div>

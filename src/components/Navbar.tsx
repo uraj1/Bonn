@@ -23,7 +23,7 @@ const Navbar = () => {
     { path: '/', label: 'Home', icon: Home },
     { path: '/about', label: 'About', icon: Info },
     { path: '/contact', label: 'Contact', icon: Phone },
-    { path: '/team', label: 'Team', icon: Users }, // Added Team page link
+    { path: '/team', label: 'Team', icon: Users }, 
   ];
 
   return (
