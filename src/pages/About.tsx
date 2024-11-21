@@ -12,8 +12,8 @@ const About = () => {
   const stats = [
     { icon: Users, value: "10+", label: "Employees" },
     { icon: Truck, value: "500+", label: "Delivery Vehicles" },
-    { icon: Target, value: "800+", label: "Cities Covered" },
-    { icon: Award, value: "25+", label: "Years Experience" },
+    { icon: Target, value: "350+", label: "Cities Covered" },
+    { icon: Award, value: "35+", label: "Years Experience" },
   ];
 
   return (
