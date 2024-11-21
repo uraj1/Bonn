@@ -1,11 +1,18 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import PageTransition from '../components/PageTransition';
-import Categories from '../components/Categories';
-import Timeline from '../components/Timeline';
-import { ArrowRight, Package2, Truck, BarChart3 } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import PageTransition from "../components/PageTransition";
+import Categories from "../components/Categories";
+import Timeline from "../components/Timeline";
+import { ArrowRight, Package2, Truck, BarChart3 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/solutions");
+  };
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -14,18 +21,21 @@ const Home = () => {
   const features = [
     {
       icon: Package2,
-      title: 'Inventory Management',
-      description: 'Real-time tracking and optimization of stock levels across all locations.',
+      title: "Inventory Management",
+      description:
+        "Real-time tracking and optimization of stock levels across all locations.",
     },
     {
       icon: Truck,
-      title: 'Distribution Network',
-      description: 'Efficient routing and delivery systems for timely product distribution.',
+      title: "Distribution Network",
+      description:
+        "Efficient routing and delivery systems for timely product distribution.",
     },
     {
       icon: BarChart3,
-      title: 'Analytics',
-      description: 'Data-driven insights for better decision making and forecasting.',
+      title: "Analytics",
+      description:
+        "Data-driven insights for better decision making and forecasting.",
     },
   ];
 
@@ -50,13 +60,16 @@ const Home = () => {
           <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
             <div className="text-white">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Supply Chain Management{' '}
+                Supply Chain Management{" "}
                 <span className="text-blue-400">and Solutions</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-gray-200">
                 Bonn Group: Revolutionizing Supply Chain Operations
               </p>
-              <button className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+              <button
+                onClick={handleNavigate}
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+              >
                 Solutions <ArrowRight className="ml-2" size={20} />
               </button>
             </div>
@@ -64,17 +77,15 @@ const Home = () => {
         </div>
 
         {/* Features Section */}
-        <div
-          ref={ref}
-          className="py-24 bg-white dark:bg-gray-900"
-        >
+        <div ref={ref} className="py-24 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Our Supply Chain Solutions
               </h2>
               <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Leveraging cutting-edge technology to optimize every aspect of the supply chain
+                Leveraging cutting-edge technology to optimize every aspect of
+                the supply chain
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -89,8 +100,12 @@ const Home = () => {
                     className="p-6 rounded-xl bg-gray-50 dark:bg-gray-800 shadow-lg"
                   >
                     <Icon className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {feature.description}
+                    </p>
                   </motion.div>
                 );
               })}
