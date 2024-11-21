@@ -84,7 +84,7 @@ const Solution = () => {
 
       {/* Image Section */}
 
-      <div className="py-16 px-20 bg-gray-50 dark:bg-gradient-to-b dark:from-gray-700 dark:via-gray-600 dark:to-gray-800">
+      <div className="py-16 px-20 bg-gray-50 dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-700 dark:to-gray-900">
         {sections.map((section, index) => (
           <div
             key={index}
