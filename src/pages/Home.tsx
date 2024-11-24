@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import PageTransition from "../components/PageTransition";
 import Categories from "../components/Categories";
-import Timeline from "../components/Timeline";
 import { ArrowRight, Package2, Truck, BarChart3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import SupplyChainPage from "../components/SupplyChain";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -75,6 +75,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <SupplyChainPage/>
 
         {/* Features Section */}
         <div ref={ref} className="py-24 bg-white dark:bg-gray-900">
