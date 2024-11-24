@@ -10,7 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/solutions");
+    navigate("/case-study");
   };
 
   const [ref, inView] = useInView({
@@ -116,8 +116,7 @@ const Home = () => {
         {/* Categories Section */}
         <Categories />
 
-        {/* Timeline Section */}
-        <Timeline />
+        
       </div>
     </PageTransition>
   );

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Timeline from "../components/Timeline";
 
 const Solution = () => {
   const sections = [
@@ -117,6 +118,9 @@ const Solution = () => {
           </div>
         ))}
       </div>
+
+      {/* Timeline Section */}
+      <Timeline />
 
       {/* Live Map Section */}
       <div className="py-16 bg-white dark:bg-gray-900">
