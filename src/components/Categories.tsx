@@ -8,7 +8,7 @@ function Categories() {
   });
 
   return (
-    <div className="py-24 bg-gray-50 dark:bg-gray-800">
+    <div className="py-24 bg-gray-50 dark:bg-gray-900 dark:bg-gradient-to-t from-black via-black/50 to-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-12"

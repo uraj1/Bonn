@@ -5,6 +5,7 @@ import Categories from "../components/Categories";
 import { ArrowRight, Package2, Truck, BarChart3 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import SupplyChainPage from "../components/SupplyChain";
+import FAQ from "../components/FaqSection";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -114,6 +115,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+       <FAQ/>
 
         {/* Categories Section */}
         <Categories />
