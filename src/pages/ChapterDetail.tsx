@@ -95,12 +95,99 @@ This project has been a holistic learning experience, equipping us with both tec
                 ["11", "Bourbon (Bonn)", "Biscuit", "75g", "0.125 L", "₹10", "6-9 months"],
                 ["12", "Coconut (Bonn)", "Biscuit", "76g", "0.127 L", "₹10", "6-9 months"],
                 ["13", "Marie Day (Bonn)", "Biscuit", "250g", "0.417 L", "₹25 - ₹40", "6-12 months"],
+                ["14", "Fruit Delight (Bonn)", "Biscuit", "200g", "0.33 L", "₹35", "6-9 months"],
+                ["15", "Oatmeal Cookies (Americana)", "Biscuit", "100g", "0.16 L", "₹20", "6 months"],
+                ["16", "Honey Glazed Biscuits (Bonn)", "Biscuit", "150g", "0.25 L", "₹40", "6-9 months"],
+                ["17", "Choco Chip Cookies (Americana)", "Biscuit", "125g", "0.2 L", "₹50", "6 months"],
+                ["18", "Digestive Biscuits (Bonn)", "Biscuit", "250g", "0.42 L", "₹45", "6-12 months"],
+                ["19", "Classic Creams (Bonn)", "Biscuit", "120g", "0.2 L", "₹25", "6-9 months"],
+                ["20", "Wheat Cracker (Americana)", "Biscuit", "180g", "0.3 L", "₹30", "6 months"],
           
               ],
             },
           },
         ],
       },
+     '3': {
+  title: "Supply Chain Optimization for BONN",
+  sections: [
+    {
+      title: "Overview of Supply Chain Optimization",
+      content: `Supply chain optimization is the process of enhancing the overall performance of a company's supply chain by reducing operational costs, improving service levels, and increasing the speed of product delivery. For BONN, a leading food manufacturer, optimizing the supply chain is crucial to ensuring efficient product delivery across the nation while maintaining low costs and high customer satisfaction. This process involves understanding the full scope of BONN’s logistics, from raw material procurement to final delivery to distributors and retailers, ensuring that all activities align with the company’s business objectives.`,
+    },
+    {
+      title: "Challenges in the Current Supply Chain",
+      content: `The existing supply chain of BONN faces several hurdles, which hinder its ability to meet customer demand in a cost-efficient and timely manner. Some of the key challenges include:
+      
+      - Fluctuating Demand: Consumer preferences for food products can vary significantly by region and season, making demand prediction difficult. This leads to overstocking in some areas and stockouts in others.
+      - High Transportation Costs: BONN's wide network of distribution centers and multiple product lines contribute to high transportation expenses. The distance between manufacturing plants, warehouses, and retail outlets adds additional complexity and costs.
+      - Inventory Management: BONN needs to maintain an adequate level of inventory in various regional warehouses while avoiding excess stock that ties up capital. Balancing inventory levels with demand while maintaining efficient storage is a significant challenge.
+      - Regional Variability: Different regions in India have varying demand patterns, which require specialized transportation routes and tailored distribution strategies. This complexity makes it harder to create a one-size-fits-all solution.`,
+    },
+    {
+      title: "Optimization Techniques Used",
+      content: `To address the challenges mentioned, several optimization techniques have been utilized:
+      
+      - Clustering Analysis with K-Means: K-means clustering is used to segment the demand across different regions into clusters that represent areas with similar demand characteristics. This enables BONN to allocate resources efficiently and determine the optimal locations for distribution centers.
+      - Center-of-Gravity Method: This technique is used to find the optimal location for BONN’s distribution centers based on demand distribution across India. It minimizes transportation costs by locating centers closer to the regions with the highest demand.
+      - Transportation Route Optimization: To minimize transportation costs, the supply chain team implemented route optimization algorithms that calculate the most efficient paths for delivery trucks to take from production facilities to distribution centers and from warehouses to retail outlets. This helps reduce fuel consumption and delivery time, improving overall supply chain efficiency.
+      - Inventory Optimization Models: The use of advanced inventory models, including Just-In-Time (JIT) and Economic Order Quantity (EOQ), helps to strike a balance between maintaining sufficient inventory to meet demand and minimizing overstocking to reduce warehousing costs.`,
+    },
+    {
+      title: "Proposed Supply Chain Model",
+      content: `The new supply chain model proposed for BONN involves several strategic elements designed to streamline operations and reduce costs. Key components of the model include:
+      
+      - Centralized and Decentralized Distribution System: The model proposes a hybrid distribution network, combining centralized manufacturing with strategically placed regional warehouses. This enables BONN to respond more swiftly to regional demand fluctuations while keeping transportation costs under control.
+      - Demand-Driven Production: The production system will be adapted to respond dynamically to demand forecasts. Advanced data analytics will be used to predict regional demand trends, and production will be scheduled accordingly to avoid overproduction and stockouts.
+      - Optimized Transportation Routes: Leveraging the center-of-gravity method and route optimization algorithms, BONN can determine the best locations for new distribution centers, reduce the number of kilometers traveled by delivery trucks, and cut down on transportation expenses. Additionally, the use of multi-modal transport strategies (rail, road, and sea) where appropriate can help further reduce costs.
+      - Real-Time Tracking and Data Integration: The integration of real-time tracking systems will allow BONN to monitor shipments, ensuring accurate delivery times and minimizing delays. The system will provide end-to-end visibility, which will help in identifying potential issues in the supply chain and enabling timely solutions.`,
+    },
+    {
+      title: "Results and Benefits",
+      content: `Implementing this optimized supply chain model has already shown promising results. The benefits BONN will see from this optimization include:
+      
+      - Reduced Transportation Costs: The improved route planning and location of distribution centers closer to high-demand regions have already led to significant cost savings in logistics. BONN is able to deliver products to markets more quickly and with lower fuel costs.
+      - Improved Inventory Management: By aligning production and inventory levels with actual regional demand, BONN has reduced inventory holding costs. The JIT production strategy has helped minimize warehousing requirements and capital tied up in unsold stock.
+      - Faster Delivery Times: Optimized transportation routes and a network of strategically located distribution centers have enabled faster and more reliable delivery to customers, improving BONN’s customer satisfaction and market responsiveness.
+      - Scalability: The supply chain model is scalable and can be adjusted to meet future demand increases, new product launches, or geographic expansion. BONN now has the flexibility to grow while maintaining an efficient and cost-effective supply chain.
+      - Sustainability: The route and transportation optimization have also led to a reduction in CO2 emissions, making BONN's supply chain more sustainable and aligned with environmental goals.
+      
+      Overall, the proposed model not only reduces operational costs but also improves BONN's ability to meet consumer demand in an ever-changing market. By adopting data-driven approaches and leveraging advanced algorithms, BONN is well-positioned to lead the market with a robust and agile supply chain.`,
+    },
+  ],
+},
+'4': {
+  title: "Finding Out Best Possible Locations",
+  sections: [
+    {
+      title: "Copy Method",
+      content: `The copy method is used to analyze and replicate successful strategies by examining similar supply chain setups. It involves understanding which existing locations are successfully serving the needs of industries with similar characteristics, such as accessibility, labor, transportation, and other critical factors. By copying successful elements from these locations, we can develop a framework for identifying optimal sites for the supply chain facilities.`,
+    },
+    {
+      title: "Sub Clustering",
+      content: `Sub-clustering involves dividing the primary clusters into smaller, more manageable segments to facilitate a more granular analysis and optimization of supply chain locations. This helps in identifying niche areas within broader regions that offer specific advantages for supply chain facilities. The process improves decision-making by allowing more precise targeting of locations based on detailed attributes like demand intensity, transportation logistics, and labor availability.`,
+    },
+    {
+      title: "Objective",
+      content: `The objective of sub-clustering is to refine the initial clustering process by dividing larger regions into smaller sub-clusters, enabling more targeted analysis for optimal location identification. By doing this, the supply chain model can better account for local differences within the broader region, which ultimately leads to improved efficiency and cost-effectiveness.`,
+    },
+    {
+      title: "Implementation",
+      content: `The sub-clustering process involves several key steps:
+      
+      1. **Finding Optimal Sub-Clusters**: The silhouette score method was used to determine the optimal number of sub-clusters. This method evaluates how well each data point fits within its assigned cluster compared to others, ensuring that sub-clusters are as cohesive as possible.
+      2. **Assigning Sub-Cluster Labels**: Based on the silhouette score analysis, the primary clusters were subdivided into smaller sub-clusters, each representing a distinct region with specific logistical and operational characteristics.
+      3. **Calculating Weighted Centers of Gravity**: The weighted center of gravity for each sub-cluster was calculated using demand data to ensure that the final locations are optimized for both accessibility and demand fulfillment.
+      
+      This approach creates a more precise and targeted distribution network by ensuring that each sub-cluster is optimized for supply chain functionality.`,
+    },
+    {
+      title: "Visualization Output",
+      content: `Once the sub-clusters were created and weighted centers of gravity were calculated, the results were visualized on a map. The visualization clearly highlighted the potential locations for the supply chain facilities, allowing for an intuitive understanding of which regions are best suited for optimization efforts. This step provided a clear overview of how each sub-cluster's characteristics align with the supply chain goals, such as minimizing transportation costs, optimizing labor availability, and improving logistical efficiency.`,
+    },
+  ],
+},
+
 
   };
 
