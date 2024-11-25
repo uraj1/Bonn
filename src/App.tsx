@@ -10,6 +10,7 @@ import Team from './pages/Team';
 import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import Solutions from './pages/Solutions';
+import ChapterDetail from './pages/ChapterDetail';
 
 function App() {
   return (
@@ -22,13 +23,14 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/team" element={<Team/>} />
-            <Route path="/case-study" element={<Solutions/>} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/case-study" element={<Solutions />} />
+            <Route path="/chapter/:id" element={<ChapterDetail />} /> {/* Route for dynamic chapters */}
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </AnimatePresence>
-        <ScrollToTopButton/>
-        <Footer/>
+        <ScrollToTopButton />
+        <Footer />
       </div>
     </Router>
   );

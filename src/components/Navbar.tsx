@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <NavLink to="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-              Bonn
+              RouteStream
             </NavLink>
           </div>
 
