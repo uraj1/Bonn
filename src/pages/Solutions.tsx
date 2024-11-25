@@ -93,6 +93,11 @@ const Solution = () => {
     },
   ];
 
+  const handleDownloadPDF = () => {
+    const pdfPath = 'bonn case.docx'; 
+    window.open(pdfPath, '_blank');
+  };
+
   return (
     <div className="bg-gray-50 dark:bg-gray-900 pt-16">
     {/* Hero Section */}
@@ -108,6 +113,23 @@ const Solution = () => {
 
     {/* Chapters Section */}
     <div className="py-16 px-6 lg:px-12">
+       {/* Download PDF Button */}
+       <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+        <button
+          onClick={handleDownloadPDF}
+          style={{
+            padding: '10px 20px',
+            fontSize: '16px',
+            cursor: 'pointer',
+            backgroundColor: '#007bff',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '5px',
+          }}
+        >
+          Download Detailed Report (PDF)
+        </button>
+      </div>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">
           Detailed Report Chapters

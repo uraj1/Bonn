@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 interface Section {
   title: string;
   content: string;
+  pros?: string[];
 }
 
 interface Chapter {
@@ -187,6 +188,278 @@ This project has been a holistic learning experience, equipping us with both tec
     },
   ],
 },
+
+'5': {
+  title: "Third Party vs Self-Sufficient Logistics",
+  sections: [
+    {
+      title: "Introduction",
+      content: `A logistics network can either rely on third-party providers (3PL) or maintain self-sufficient operations. The choice depends on factors such as cost efficiency, flexibility, and control over the supply chain.`,
+    },
+    {
+      title: "Third Party Logistics",
+      content: `Third-party logistics involves outsourcing transportation, warehousing, and distribution activities to specialized companies. Here's a breakdown of the pros and cons of this model:`,
+    },
+    {
+      title: "Pros of Third Party Logistics",
+      content: `1. **Expertise and Scalability**: Third-party providers often have advanced infrastructure and technology, improving efficiency.
+      2. **Cost Efficiency**: They aggregate demand, reducing per-unit costs, particularly for small-scale operations.
+      3. **Focus on Core Business**: Companies can concentrate on production and customer engagement instead of managing logistics.`,
+    },
+    {
+      title: "Cons of Third Party Logistics",
+      content: `1. **Loss of Control**: Reduced oversight on operations might affect service quality.
+      2. **Dependency**: Over-reliance on third parties could lead to disruptions if their operations are hampered.
+      3. **Data Security**: Sharing data with third parties can risk confidentiality.`,
+    },
+    {
+      title: "Self-Sufficiency in Logistics",
+      content: `This approach involves owning and operating the logistics network, including vehicles, warehouses, and staff. Here are the pros and cons of this model:`,
+    },
+    {
+      title: "Pros of Self-Sufficiency",
+      content: `1. **Full Control**: Companies can customize operations according to specific needs.
+      2. **Brand Reputation**: Consistent service enhances customer trust.
+      3. **Data Ownership**: Sensitive information stays within the organization.`,
+    },
+    {
+      title: "Cons of Self-Sufficiency",
+      content: `1. **High Initial Investment**: Requires significant capital for purchasing and maintaining assets.
+      2. **Complexity**: Managing logistics operations can divert focus from core activities.
+      3. **Limited Flexibility**: Scaling up or down in response to demand changes can be challenging.`,
+    },
+    {
+      title: "Comparing Third-Party and Self-Sufficient Logistics Using Data",
+      content: `The dataset includes data on vehicles, capacity, and costs, providing insight into which model might work best for different supply chain needs. Below are some key observations and analyses based on the provided data:`,
+    },
+    {
+      title: "Key Observations from the Dataset",
+      content: `1. **Eicher Pro 3015 Reefer**: High capacity (5.5 tons/trip), moderate operating cost.
+      2. **Tata 407 Gold SFC**: Medium capacity (2.2 tons/trip), lower operating cost.
+      3. **Ashok Leyland Dost**: Low capacity (1.25 tons/trip), lowest cost per trip.`,
+    },
+    {
+      title: "Third Party Logistics Analysis",
+      content: `- **Fixed Costs**: Third-party logistics avoids fixed costs, as third parties bear the vehicle and infrastructure costs.
+      - **Operational Costs**: Operational costs, such as per-trip costs, fluctuate based on market conditions, which could result in cost savings or increases depending on usage.`,
+    },
+    {
+      title: "Self-Sufficiency Logistics Analysis",
+      content: `- **Fixed Costs**: Self-sufficiency logistics requires substantial initial investments (e.g., Rs. 66,00,000 for the Eicher Pro).
+      - **Operating Costs**: Operating costs are predictable but need efficient vehicle utilization to stay competitive.`,
+    },
+    {
+      title: "Final Verdict",
+      content: `Based on the dataset:
+      - For short-term or flexible demand, **third-party logistics** offers a cost-effective and scalable solution.
+      - For long-term and stable demand, **self-sufficiency** provides better control and consistent quality, despite higher initial investments.
+      
+      **Recommendations**:
+      1. If initial capital is constrained or the logistics network is geographically dispersed, **opt for third-party logistics**.
+      2. For critical operations requiring high reliability, consider **self-sufficiency**, focusing on high-capacity vehicles like the **Eicher Pro 3015 Reefer**.`,
+    },
+  ]
+},
+
+'6': {
+  title: "Logistics and Planning",
+  sections: [
+    {
+      title: "Provider Comparison Table",
+      content: `Here’s a comparison of third-party logistics providers based on various factors like cost, capacity, and service areas:`,
+      table: {
+        headers: [
+          "Provider Name", "Cost per KM", "Max Capacity", "Lead Time", "Serviceability Coverage Area", "Suitable for", "Best in which State?"
+        ],
+        rows: [
+          ["Gati Logistics", "45", "2000 kg", "1-2 days", "Uttar Pradesh, Madhya Pradesh, Punjab, Rajasthan", "Factory-Warehouse", "Uttar Pradesh"],
+          ["Delhivery", "40", "750 kg", "3 days", "Rajasthan, Haryana, NCT of Delhi", "Warehouse-Destination", "Rajasthan"],
+          ["Blue Dart", "50", "1000 kg", "2 days", "Punjab, Haryana, NCT of Delhi", "Warehouse-Destination", "Haryana"],
+          ["Rivigo", "42", "1500 kg", "1 day", "Jammu & Kashmir, Himachal Pradesh, Uttarakhand", "Flexible", "Jammu and Kashmir"],
+          ["Safexpress", "55", "1200 kg", "2-3 days", "Uttar Pradesh, Uttarakhand, Madhya Pradesh", "Factory-Warehouse", "Madhya Pradesh"],
+          ["Om Logistics", "48", "1800 kg", "1-2 days", "Uttar Pradesh, Haryana, Rajasthan, NCT of Delhi", "Flexible", "Uttar Pradesh"],
+          ["TCI Freight", "43", "3000 kg", "2-3 days", "Punjab, Haryana, Uttar Pradesh", "Factory-Warehouse", "Punjab"],
+          ["Spoton Logistics", "46", "1200 kg", "1-2 days", "Rajasthan, Madhya Pradesh, Delhi", "Factory-Warehouse", "Madhya Pradesh"]
+        ]
+      }
+    },
+    {
+      title: "Vehicle Comparison Table",
+      content: `The following table provides a comparison of vehicles used in self-sufficient logistics operations:`,
+      table: {
+        headers: [
+          "Vehicle Name", "Capacity per Trip (Tons)", "Trips (Total)", "Total Capacity Used (Tons)", "Qty", "Total Fixed Cost (Rs.)", "Total Operating Cost (Rs.)", "Location"
+        ],
+        rows: [
+          ["Eicher Pro 3015 Reefer", "5.5", "6 (3x2 days)", "33", "3", "66,00,000", "6,30,000", "Chittogarh"],
+          ["Tata 407 Gold SFC", "2.2", "6", "13.2", "6", "75,00,000", "4,05,000", ""],
+          ["Ashok Leyland Dost", "1.25", "6", "7.5", "5", "37,50,000", "1,35,000", ""],
+          ["Eicher Pro 3015 Reefer", "5.5", "6", "33", "5", "1,10,00,000", "10,50,000", "Raebareli"],
+          ["Tata 407 Gold SFC", "2.2", "6", "13.2", "10", "1,25,00,000", "6,75,000", ""],
+          ["Mahindra Bolero Pik-Up", "1.5", "6", "9", "8", "64,00,000", "7,20,000", ""],
+          ["Eicher Pro Reefer", "2", "6", "12", "6", "72,00,000", "12,00,000", "Ludhiana"],
+          ["Tata 407 Gold SFC", "2.2", "6", "13.2", "7", "87,50,000", "8,10,000", ""],
+          ["Mahindra Supro Maxitruck", "1", "6", "6", "6", "33,00,000", "2,64,000", ""]
+        ]
+      }
+    }
+  ]
+},
+'7': {
+  title: "Network Design and Cost Analysis",
+  sections: [
+    {
+      title: "Proposed Network Layout: Version 1",
+      content: `The proposed network adopts a hybrid direct delivery model. Plants supply nearby regions directly, while distant areas are serviced via warehouses. This model addresses challenges such as backtracking and high transportation costs while optimizing logistics management.`,
+      challengesAddressed: [
+        "Reduced Backtracking: Eliminates unnecessary routing through warehouses for nearby regions.",
+        "Lower Transportation Costs: Optimized routes reduce fuel consumption and delivery times.",
+        "Simplified Logistics Management: Reduces the number of trucks required, cutting operational complexity."
+      ],
+      visualization: `The layout shows direct connections between plants and nearby regions while maintaining a hub-and-spoke model for distant areas.`
+    },
+    {
+      title: "Vehicle Comparison Table",
+      content: `The following table provides a comparison of vehicles used in self-sufficient logistics operations:`,
+      table: {
+        headers: [
+          "Vehicle Name", "Capacity per Trip (Tons)", "Trips (Total)", "Total Capacity Used (Tons)", "Qty", "Total Fixed Cost (Rs.)", "Total Operating Cost (Rs.)", "Location"
+        ],
+        rows: [
+          ["Eicher Pro 3015 Reefer", "5.5", "6 (3x2 days)", "33", "3", "66,00,000", "6,30,000", "Chittogarh"],
+          ["Tata 407 Gold SFC", "2.2", "6", "13.2", "6", "75,00,000", "4,05,000", ""],
+          ["Ashok Leyland Dost", "1.25", "6", "7.5", "5", "37,50,000", "1,35,000", ""],
+          ["Eicher Pro 3015 Reefer", "5.5", "6", "33", "5", "1,10,00,000", "10,50,000", "Raebareli"],
+          ["Tata 407 Gold SFC", "2.2", "6", "13.2", "10", "1,25,00,000", "6,75,000", ""],
+          ["Mahindra Bolero Pik-Up", "1.5", "6", "9", "8", "64,00,000", "7,20,000", ""],
+          ["Eicher Pro Reefer", "2", "6", "12", "6", "72,00,000", "12,00,000", "Ludhiana"],
+          ["Tata 407 Gold SFC", "2.2", "6", "13.2", "7", "87,50,000", "8,10,000", ""],
+          ["Mahindra Supro Maxitruck", "1", "6", "6", "6", "33,00,000", "2,64,000", ""]
+        ]
+      }
+    }
+  ]
+},
+
+
+  "8": {
+    "title": "Network Design and Cost Analysis",
+    "sections": [
+      {
+        "title": "Proposed Network Layout",
+        "content": "Improvements made in the network design include the introduction of clustering and sub-clustering techniques using AI/ML models, triangular distribution models for direct supply, and warehouses retained for distant regions or emergencies.",
+        "subsections": [
+          {
+            "title": "Improvements Made",
+            "content": [
+              "Introduced clustering and sub-clustering techniques using AI/ML models to group regions based on demand and proximity.",
+              "Formed triangular regions around each plant, ensuring direct supply from the plant to areas within the triangle.",
+              "Warehouses were retained for distant regions or as backup for emergency supplies."
+            ]
+          },
+          {
+            "title": "Key Changes",
+            "content": [
+              "Triangular Distribution Model: Each plant was connected to regions forming a triangle, minimizing overlapping routes.",
+              "Direct Supply: Areas close to plants received direct supply, eliminating the need for intermediate warehousing.",
+              "Demand Forecasting: AI/ML-based centroid clustering was used to predict demand patterns, ensuring accurate distribution planning."
+            ]
+          },
+          {
+            "title": "Benefits Achieved",
+            "content": [
+              "Cost Reduction: Direct routes and clustering reduced transportation costs significantly compared to Version 1.",
+              "Time Efficiency: Shorter routes and fewer backtracking trips saved time, improving delivery schedules.",
+              "Resource Optimization: The need for fewer trucks and less reliance on warehouses lowered overall operational expenses."
+            ]
+          },
+          {
+            "title": "Visualization",
+            "content": "The image of Version 2 shows the triangular clusters with direct routes from plants to regions, highlighting the reduction in backtracking and unnecessary routes."
+          }
+        ]
+      },
+      {
+        "title": "Cost Analysis",
+        "content": "Total Cost Version 2 = Cost of Transportation to Warehouse + Cost of Warehouse to Sub-Districts + Fixed Costs",
+        "subsections": [
+          {
+            "title": "Cost of Plant to Warehouse",
+            "table": {
+              "headers": ["Origin", "Weighted Distance Per Day", "Weighted Distance Per Month", "Monthly Cost", "Percentage Change"],
+              "rows": [
+                ["Chittaurgarh", "7009734", "210,292,010", "₹3,154,380", "-9.54%"],
+                ["Raibareli", "10787391", "323,621,734", "₹4,854,326", "-21.73%"],
+                ["Sub-Total", "", "", "₹8,008,706", "-17.34%"]
+              ]
+            }
+          },
+          {
+            "title": "Cost of Warehouse to Sub Districts",
+            "table": {
+              "headers": ["Origin", "Weighted Distance Per Day", "Weighted Distance Per Month", "Monthly Cost", "Percentage Change"],
+              "rows": [
+                ["Rajasmand", "1962548", "58,876,429", "₹883,146", "-14.10%"],
+                ["Hardoi, UP", "4225840", "126,775,191", "₹1,901,628", "-0.72%"],
+                ["Sultanpur, UP", "3579654", "107,389,626", "₹1,610,844", "-22.85%"],
+                ["Katni, MP", "1434226", "43,026,774", "₹645,402", "-20.22%"],
+                ["Sheopur, MP", "1712804", "51,384,134", "₹770,762", "-21.36%"],
+                ["Sehore, MP", "1978810.46", "59,364,314", "₹890,465", "-8.26%"],
+                ["Chittaurgarh", "394724", "11,841,732", "₹177,626", ""],
+                ["Raibareli", "2491402", "74,742,050", "₹1,121,131", ""],
+                ["Sub-Total", "", "", "₹5,041,020", "-35.30%"]
+              ]
+            }
+          },
+          {
+            "title": "Rental and Maintenance Cost",
+            "table": {
+              "headers": ["District", "Warehouse Size (sq ft)", "Monthly Rent per sq ft (₹)", "Monthly Rental Cost", "Percentage Change"],
+              "rows": [
+                ["Hardoi", "84,028.59", "14", "₹1,176,400", "-2.97%"],
+                ["Katni", "28,518.82", "17", "₹484,820", "-19.44%"],
+                ["Rajsamand", "39,024.22", "18", "₹702,436", "-3.41%"],
+                ["Sehore", "39,347.60", "14", "₹550,866", "1.41%"],
+                ["Sheopur", "34,058.21", "20", "₹681,164", "-20.79%"],
+                ["Sultanpur", "71,179.53", "15", "₹1,067,693", "-40.24%"],
+                ["Chittaurgarh", "7,848.89", "15", "₹117,733", "-97.95%"],
+                ["Raibareli", "49,540.20", "15", "₹743,103", "-96.80%"],
+                ["Sub-Total", "", "", "₹4,663,380", "-18.63%"]
+              ]
+            }
+          },
+          {
+            "title": "Total Cost",
+            "content": "The total cost for Version 2 is ₹17,713,106, with a reduction of 23.69%."
+          }
+        ]
+      },
+      {
+        "title": "Pros and Cons",
+        "subsections": [
+          {
+            "title": "Pros",
+            "content": [
+              "Cost Optimization: Direct routing and triangular clustering minimize transportation costs by eliminating redundant routes.",
+              "Efficient Clustering: Demand fulfillment within triangular clusters reduces the complexity of operations.",
+              "Reduced Delivery Time: Direct supply to nearby areas from plants ensures faster delivery and better resource utilization.",
+              "Improved Scalability: The triangular model allows flexibility to adapt to varying demands in specific regions."
+            ]
+          },
+          {
+            "title": "Cons",
+            "content": [
+              "Initial Complexity: Requires advanced planning, AI/ML clustering, and demand prediction models, which can be challenging to implement initially.",
+              "Dependency on Accurate Data: The success of the optimization depends heavily on accurate demand forecasts and clustering algorithms.",
+              "High Initial Investment: Setting up optimized transportation routes and implementing AI-based models may require significant initial investment."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+
+
 
 
   };
